@@ -1,12 +1,11 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Header } from "./pages/banner";
+import { Header } from "./pages/header";
 import { Cart } from "./pages/cart";
 import { useReducer } from "react";
-import {initialState,reducer} from './items/items'
-import { itemContext } from "./items/itemContext";
-
+import {initialState,reducer} from './components/items/items'
+import { itemContext } from "./components/items/itemContext";
 
 function App() {
 

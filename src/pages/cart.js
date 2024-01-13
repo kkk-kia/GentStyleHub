@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { itemContext } from "../items/itemContext";
+import { itemContext } from "../components/items/itemContext";
 
 export const Cart = () => {
   const { state, dispatch } = useContext(itemContext);

@@ -1,37 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Montserrat:wght@500&family=Oswald:wght@500&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.banner{
-    width: 100%;
-    background-color: gray;
-    position: relative;
+body{
+    /* background-color: #C0C0C0; */
 
+    font-family: "Montserrat";
 }
-.banner-cart{
-    position: absolute;
-    display: inline-block;
-    right: 0;
-}
-.Home{
-    /* display: flex;
-    flex: row;
-    width: 100% */
-}
-.Home-header{
-    background-color: skyblue;
+
+.header{
     width: 100%;
-    height: 300px;
+    /* height: 50px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    /* background-color: white;  */
+    font-family: sans-serif; 
+    /* padding: 10px 0; */
+    background-color: #C0C0C0     ;
 }
-.Home div{
-    /* width: 50%; */
+.header div{
+    /* width: 40%; */
+    /* height: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    /* border-radius: 3px; */
 }
-.Home div img{
-    width: 200px;
+.header div.site-name{
+    font-family: "Oswald";
+    font-size: 45px;
+    padding-bottom: 10px;
+    color: #555555;
+}
+.header .link{
+    text-decoration: none;
+    color: black;
+}
+.header .menu-bar{
+    background-color: #555555;
+    color: wheat;
+    width: 100%;
+    display: flex;
+    align-items: center;
 
 }
+.header .menu-bar .category{
+    width: 60%;
+    
+}
+.header .menu-bar .category button{
+    border: none;
+    padding: 20px 20px;
+    background-color: #555555;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+/* .header .menu-bar .category button:hover{
+    background: white;
+    color: black;
+} */
+.background-white{
+    background-color: white !important;
+    color: black !important;
+}
+.header .menu-bar .search{
+    width: 30%;
+    
+}
+.header .menu-bar .search input{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 10px;
+}
+.header .menu-bar .cart{
+    right: 0;
+    position: absolute;
+    padding-right: 20px;
+}
+.show-category{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: white;
+}
+.show-category a{
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: monospace;
+    
+    
+}
+
+.Home{
+    /* display: flex; */
+    /* flex: row; */
+    width: 100%;
+}
+
+.img-slider{
+    width: 100%;
+}
+
