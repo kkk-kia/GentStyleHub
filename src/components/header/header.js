@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import React, { useRef, useState } from "react";
-import { category } from "../components/category/category";
+import { category } from "../category/category";
 
 export const Header = () => {
   const [show, setShow] = useState(null);

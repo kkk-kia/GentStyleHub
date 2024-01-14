@@ -45,7 +45,7 @@ const imgUrls=[
 export const Off = ()=>{
 return(
     <div className='off-conteiner'>
-        <h1 style={{textAlign:"center"}}>UP TO 80% OFF!</h1>
+        <h1>UP TO 80% OFF!</h1>
         <div className='items-conteiner'>
             {imgUrls.map((item,index)=>(
                 <div key={index}>

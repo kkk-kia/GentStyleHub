@@ -1,11 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Header } from "./pages/header";
+import { Header } from "./components/header/header";
 import { Cart } from "./pages/cart";
 import { useReducer } from "react";
 import {initialState,reducer} from './components/items/items'
 import { itemContext } from "./components/items/itemContext";
+import { Footer } from "./components/footer/footer";
 
 function App() {
 
@@ -16,11 +17,12 @@ function App() {
     <div className="App">
       <itemContext.Provider value={{state,dispatch}}>
         <Router>
-          <Header />
+          <Header/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer/>
         </Router>
       </itemContext.Provider>
     </div>
